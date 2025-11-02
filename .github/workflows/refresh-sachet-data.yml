@@ -1,0 +1,53 @@
+name: Update Sachet Data
+
+on:
+  schedule:
+    - cron: '*/5 * * * *' # Run every 5 minutes (minimum interval allowed by GitHub Actions)
+                          # Note: GitHub may still delay or skip runs during high load periods
+  workflow_dispatch:      # Allow manual trigger
+  repository_dispatch:
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write     # Need write permission to update the cached file
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Fetch and process API data
+        run: npm start
+
+      - name: Configure Git
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+
+      - name: Commit and push changes
+        run: |
+          # Get today's date in YYYYMMDD format
+          TODAY=$(date '+%Y%m%d')
+          GPX_FILE="data/goa-fire-trucks-gpx-${TODAY}.geojson"
+          
+          # First check if any files changed
+          if git status -s | grep -q "data/"; then
+            # Add both the main data file and the daily GPX track file
+            git add data/goa-fire-trucks.geojson "$GPX_FILE"
+          
+            # Commit and push the changes
+            git commit -m "Refresh fire truck data and track history [skip ci]"
+            git push
+          else
+            echo "No changes detected in data files"
+          fi 
