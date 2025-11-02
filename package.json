@@ -1,5 +1,11 @@
 {
   "type": "module",
+  "name": "sachet-dmp-geojson-layer",
+  "description": "Caching system for Goa weather alerts from SACHET",
+  "main": "fetch-data.js",
+  "scripts": {
+    "start": "node fetch-data.js"
+  },
   "dependencies": {
     "node-fetch": "^3.3.2"
   }
