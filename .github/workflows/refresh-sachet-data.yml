@@ -35,17 +35,9 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          # Get today's date in YYYYMMDD format
-          TODAY=$(date '+%Y%m%d')
-          GPX_FILE="data/goa-fire-trucks-gpx-${TODAY}.geojson"
-          
-          # First check if any files changed
           if git status -s | grep -q "data/"; then
-            # Add both the main data file and the daily GPX track file
-            git add data/goa-fire-trucks.geojson "$GPX_FILE"
-          
-            # Commit and push the changes
-            git commit -m "Refresh fire truck data and track history [skip ci]"
+            git add data/goa-sachet-alerts.geojson
+            git commit -m "Refresh Sachet alerts data"
             git push
           else
             echo "No changes detected in data files"
