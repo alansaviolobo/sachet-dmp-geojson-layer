@@ -43,7 +43,6 @@ export async function fetchAndCacheData() {
             throw new Error(`API Internal Error: ${JSON.stringify(jsonData)}`);
         }
 
-        const {area_json, ...props} = jsonData.alerts[0];
         const result = {
             type: 'FeatureCollection',
             metadata: {
