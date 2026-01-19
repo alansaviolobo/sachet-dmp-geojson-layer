@@ -38,8 +38,8 @@ jobs:
       - name: Commit and push changes
         run: |
           if git status -s | grep -q "data/"; then
-            git add data/goa-sachet-alerts.geojson
-            git commit -m "Refresh Sachet alerts data"
+            git add data/*.geojson
+            git commit -m "Refresh alerts data"
             git push
           else
             echo "No changes detected in data files"
