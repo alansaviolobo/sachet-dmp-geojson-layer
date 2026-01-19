@@ -13,10 +13,10 @@ jobs:
       contents: write     # Need write permission to update the cached file
     
     steps:
-      - name: Checkout repository
+      - name: Checkout code branch
         uses: actions/checkout@v3
         with:
-          ref: data
+          ref: code
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
@@ -30,15 +30,32 @@ jobs:
       - name: Fetch and process API data
         run: npm start
 
-      - name: Configure Git
+      - name: Save Data to Temp
         run: |
-          git config user.name "GitHub Actions Bot"
-          git config user.email "actions@github.com"
+          mkdir -p /tmp/sachet_data
+          cp data/*.geojson /tmp/sachet_data/
+          cp data/debug-log.txt /tmp/sachet_data/ || true
+
+      - name: Checkout data branch
+        uses: actions/checkout@v3
+        with:
+          ref: data
 
       - name: Commit and push changes
         run: |
+          # Restore data
+          mkdir -p data
+          cp /tmp/sachet_data/*.geojson data/
+          cp /tmp/sachet_data/debug-log.txt data/ || true
+
+          # Configure Git
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+
+          # Commit
           if git status -s | grep -q "data/"; then
             git add data/*.geojson
+            git add data/debug-log.txt
             git commit -m "Refresh alerts data"
             git push
           else
