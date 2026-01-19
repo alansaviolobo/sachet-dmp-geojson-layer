@@ -8,7 +8,7 @@
 import fs from 'fs';
 import path from 'path';
 import fetch from 'node-fetch';
-import {fileURLToPath} from 'url';
+import { fileURLToPath } from 'url';
 
 const API_URL = 'https://sachet.ndma.gov.in/cap_public_website/FetchLocationWiseAlerts?lat=15.486867644898695&long=73.81707691946626&radius=50';
 const CACHE_DIRECTORY = path.join(path.dirname(fileURLToPath(import.meta.url)), 'data/');
@@ -63,7 +63,7 @@ export async function fetchAndCacheData() {
                 count: jsonData.alerts.length
             },
             features: jsonData.alerts.map(row => {
-                const {area_json, ...props} = row;
+                const { area_json, ...props } = row;
                 return {
                     type: 'Feature',
                     properties: props,
@@ -74,10 +74,11 @@ export async function fetchAndCacheData() {
 
         fs.writeFileSync(OUTPUT_FILE, JSON.stringify(result, null, 2));
         debugLog('Sachet data cached successfully!');
+        return true; // Success
     } catch (error) {
         debugLog(`ERROR: ${error.message}`, error.stack);
         console.error('Error fetching or caching data:', error);
-        process.exit(1);
+        return false; // Failure
     }
 }
 
@@ -138,17 +139,17 @@ export async function fetchAndCacheNRSCData() {
                 debugLog(`No active alerts for target districts in '${key}'`);
             }
         }
-
+        return true; // Success
     } catch (error) {
         debugLog(`ERROR in NRSC fetch: ${error.message}`, error.stack);
         console.error('Error fetching or caching NRSC data:', error);
-        // We do not exit process here so that other fetch functions can continue if we add more
+        return false; // Failure
     }
 }
 
 // Make sure the cache directory exists
 if (!fs.existsSync(CACHE_DIRECTORY)) {
-    fs.mkdirSync(CACHE_DIRECTORY, {recursive: true});
+    fs.mkdirSync(CACHE_DIRECTORY, { recursive: true });
 }
 
 // Clear the debug log before starting
@@ -156,9 +157,31 @@ fs.writeFileSync(LOG_FILE, '');
 debugLog('Debug logging initialized');
 
 // Run only if this file is executed directly
-if (import.meta.url === `file://${process.argv[1]}`) {
+// Robust check for ES Main entry point that works in local and CI/Action environments
+const currentFile = fileURLToPath(import.meta.url);
+const executedFile = process.argv[1];
+
+if (currentFile === executedFile || executedFile.endsWith(path.basename(currentFile))) {
     (async () => {
-        await fetchAndCacheData();
-        await fetchAndCacheNRSCData();
+        console.log('Starting Sachet & NRSC Data Fetch...');
+
+        const results = await Promise.allSettled([
+            fetchAndCacheData(),
+            fetchAndCacheNRSCData()
+        ]);
+
+        const sachetSuccess = results[0].status === 'fulfilled' && results[0].value === true;
+        const nrscSuccess = results[1].status === 'fulfilled' && results[1].value === true;
+
+        if (!sachetSuccess) console.error('Sachet Data Fetch Failed');
+        if (!nrscSuccess) console.error('NRSC Data Fetch Failed');
+
+        if (!sachetSuccess || !nrscSuccess) {
+            console.error('One or more fetch processes failed.');
+            process.exit(1);
+        } else {
+            console.log('All fetch processes completed successfully.');
+            process.exit(0);
+        }
     })();
 }
