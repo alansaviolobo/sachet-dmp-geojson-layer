@@ -1,0 +1,75 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "timestamp": "2026-03-04T09:30:51.921Z",
+    "source": "NRSC - National Remote Sensing Centre",
+    "originalLayerId": "FFAlerts",
+    "count": 2
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.159,
+          15.145
+        ]
+      },
+      "crs": {
+        "type": "EPSG",
+        "properties": {
+          "code": "4326"
+        }
+      },
+      "properties": {
+        "name": "",
+        "sensor": "JPSS1(375m)",
+        "time": "2026-03-04 13:23:56",
+        "dist": "SOUTH GOA",
+        "style": {
+          "icon": {
+            "iconUrl": "img/dashboard/Fire/f3.png",
+            "iconSize": [
+              25,
+              25
+            ]
+          },
+          "className": "blinking"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.15796,
+          15.14615
+        ]
+      },
+      "crs": {
+        "type": "EPSG",
+        "properties": {
+          "code": "4326"
+        }
+      },
+      "properties": {
+        "name": "",
+        "sensor": "S-NPP VIIRS(375m)",
+        "time": "2026-03-04 13:02:36",
+        "dist": "SOUTH GOA",
+        "style": {
+          "icon": {
+            "iconUrl": "img/dashboard/Fire/f3.png",
+            "iconSize": [
+              25,
+              25
+            ]
+          },
+          "className": "blinking"
+        }
+      }
+    }
+  ]
+}
