@@ -1,0 +1,203 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "timestamp": "2026-03-22T10:19:28.143Z",
+    "source": "NRSC - National Remote Sensing Centre",
+    "originalLayerId": "FFAlerts",
+    "count": 6
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.20407,
+          15.41275
+        ]
+      },
+      "crs": {
+        "type": "EPSG",
+        "properties": {
+          "code": "4326"
+        }
+      },
+      "properties": {
+        "name": "",
+        "sensor": "S-NPP VIIRS(375m)",
+        "time": "2026-03-22 14:05:59",
+        "dist": "SOUTH GOA",
+        "style": {
+          "icon": {
+            "iconUrl": "img/dashboard/Fire/f3.png",
+            "iconSize": [
+              25,
+              25
+            ]
+          },
+          "className": "blinking"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.2047,
+          15.41343
+        ]
+      },
+      "crs": {
+        "type": "EPSG",
+        "properties": {
+          "code": "4326"
+        }
+      },
+      "properties": {
+        "name": "",
+        "sensor": "JPSS1(375m)",
+        "time": "2026-03-22 14:27:19",
+        "dist": "SOUTH GOA",
+        "style": {
+          "icon": {
+            "iconUrl": "img/dashboard/Fire/f3.png",
+            "iconSize": [
+              25,
+              25
+            ]
+          },
+          "className": "blinking"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.20157,
+          15.41491
+        ]
+      },
+      "crs": {
+        "type": "EPSG",
+        "properties": {
+          "code": "4326"
+        }
+      },
+      "properties": {
+        "name": "",
+        "sensor": "S-NPP VIIRS(375m)",
+        "time": "2026-03-22 14:05:59",
+        "dist": "SOUTH GOA",
+        "style": {
+          "icon": {
+            "iconUrl": "img/dashboard/Fire/f3.png",
+            "iconSize": [
+              25,
+              25
+            ]
+          },
+          "className": "blinking"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.19863,
+          15.41597
+        ]
+      },
+      "crs": {
+        "type": "EPSG",
+        "properties": {
+          "code": "4326"
+        }
+      },
+      "properties": {
+        "name": "",
+        "sensor": "S-NPP VIIRS(375m)",
+        "time": "2026-03-22 14:05:59",
+        "dist": "SOUTH GOA",
+        "style": {
+          "icon": {
+            "iconUrl": "img/dashboard/Fire/f3.png",
+            "iconSize": [
+              25,
+              25
+            ]
+          },
+          "className": "blinking"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.20349,
+          15.41661
+        ]
+      },
+      "crs": {
+        "type": "EPSG",
+        "properties": {
+          "code": "4326"
+        }
+      },
+      "properties": {
+        "name": "",
+        "sensor": "S-NPP VIIRS(375m)",
+        "time": "2026-03-22 14:05:59",
+        "dist": "SOUTH GOA",
+        "style": {
+          "icon": {
+            "iconUrl": "img/dashboard/Fire/f3.png",
+            "iconSize": [
+              25,
+              25
+            ]
+          },
+          "className": "blinking"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.20392,
+          15.44813
+        ]
+      },
+      "crs": {
+        "type": "EPSG",
+        "properties": {
+          "code": "4326"
+        }
+      },
+      "properties": {
+        "name": "",
+        "sensor": "S-NPP VIIRS(375m)",
+        "time": "2026-03-22 14:05:59",
+        "dist": "SOUTH GOA",
+        "style": {
+          "icon": {
+            "iconUrl": "img/dashboard/Fire/f3.png",
+            "iconSize": [
+              25,
+              25
+            ]
+          },
+          "className": "blinking"
+        }
+      }
+    }
+  ]
+}
