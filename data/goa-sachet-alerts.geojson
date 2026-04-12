@@ -1,7 +1,7 @@
 {
   "type": "FeatureCollection",
   "metadata": {
-    "timestamp": "2026-04-12T22:21:56.209Z",
+    "timestamp": "2026-04-12T23:23:55.502Z",
     "source": "Sachet - National Disaster Alert Portal",
     "count": 1
   },
@@ -10,18 +10,18 @@
       "type": "Feature",
       "properties": {
         "severity": "WATCH",
-        "identifier": 1776023157555019,
-        "effective_start_time": "Mon Apr 13 01:00:00 IST 2026",
-        "effective_end_time": "Mon Apr 13 04:00:00 IST 2026",
+        "identifier": 1776033694003019,
+        "effective_start_time": "Mon Apr 13 04:00:00 IST 2026",
+        "effective_end_time": "Mon Apr 13 07:00:00 IST 2026",
         "disaster_type": "Light Thunderstorm with surface wind",
         "area_description": "4 districts of Karnataka",
         "severity_level": "Likely",
         "type": 0,
         "actual_lang": "kn",
-        "warning_message": "ಮುಂದಿನ 3 ಗಂಟೆಗಳಲ್ಲಿ ಬೆಳಗಾವಿ, ಧಾರವಾಡ, ಗದಗ, ಉತ್ತರ ಕನ್ನಡದ ಪ್ರತ್ಯೇಕ ಸ್ಥಳಗಳಲ್ಲಿ ಮೇಲ್ಮೈ ಗಾಳಿಯೊಂದಿಗೆ ಲಘು ಗುಡುಗು ಸಹಿತ ಮಳೆಯಾಗುವ ಸಾಧ್ಯತೆಯಿದೆ.IMD BNG",
+        "warning_message": "ಮುಂದಿನ 3 ಗಂಟೆಗಳಲ್ಲಿ ಬೆಳಗಾವಿ, ಧಾರವಾಡ, ಗದಗ, ಉತ್ತರ ಕನ್ನಡದ ಮೇಲೆ ಒಂದು ಅಥವಾ ಎರಡು ಸ್ಥಳಗಳಲ್ಲಿ ಮೇಲ್ಮೈ ಗಾಳಿಯೊಂದಿಗೆ ಲಘು ಗುಡುಗು ಸಹಿತ ಮಳೆಯಾಗುವ ಸಾಧ್ಯತೆಯಿದೆ.IMD BNG",
         "disseminated": "true",
         "severity_color": "yellow",
-        "alert_id_sdma_autoinc": 112803,
+        "alert_id_sdma_autoinc": 112804,
         "centroid": "74.82417141713573,16.119603293561497",
         "alert_source": "Karnataka SDMA",
         "area_covered": "35316.13",
