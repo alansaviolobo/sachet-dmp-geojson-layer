@@ -1,65 +1,9 @@
 {
   "type": "FeatureCollection",
   "metadata": {
-    "timestamp": "2026-05-25T23:54:26.538Z",
+    "timestamp": "2026-05-26T02:03:10.408Z",
     "source": "Sachet - National Disaster Alert Portal",
-    "count": 1
+    "count": 0
   },
-  "features": [
-    {
-      "type": "Feature",
-      "properties": {
-        "severity": "WATCH",
-        "identifier": 1779750098766033,
-        "effective_start_time": "Tue May 26 04:30:00 IST 2026",
-        "effective_end_time": "Tue May 26 07:30:00 IST 2026",
-        "disaster_type": "Thunder shower with strong wind",
-        "area_description": "Shiroda, ponda",
-        "severity_level": "Very Likely",
-        "type": 0,
-        "actual_lang": "en",
-        "warning_message": "light rainfall with Thunder shower with strong wind is very likely to occur at a few places over South Goa in next 3 hours.",
-        "disseminated": "false",
-        "severity_color": "yellow",
-        "alert_id_sdma_autoinc": 119608,
-        "centroid": "74.03779107437046,15.336722278860192",
-        "alert_source": "IMD Goa",
-        "area_covered": "254.96",
-        "sender_org_id": "33"
-      },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-          [
-            [
-              [
-                74.141161,
-                15.310683
-              ],
-              [
-                74.069445,
-                15.25475
-              ],
-              [
-                73.95653,
-                15.295965
-              ],
-              [
-                73.942797,
-                15.404852
-              ],
-              [
-                74.103014,
-                15.396025
-              ],
-              [
-                74.141161,
-                15.310683
-              ]
-            ]
-          ]
-        ]
-      }
-    }
-  ]
+  "features": []
 }
