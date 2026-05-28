@@ -1,28 +1,28 @@
-[2026-05-28T01:55:09.735Z] Debug logging initialized
-[2026-05-28T01:55:09.738Z] Starting data fetch process
-[2026-05-28T01:55:09.767Z] Starting NRSC data fetch process
-[2026-05-28T01:55:11.317Z] API response status: 200
-[2026-05-28T01:55:11.319Z] Received JSON response: {"alerts":[],"responseMessage":"Success"}...
-[2026-05-28T01:55:11.319Z] Sachet data cached successfully!
-[2026-05-28T01:55:13.101Z] NRSC API response status: 200
-[2026-05-28T01:55:27.311Z] Received NRSC data with keys: ffAlerts, cloudBurst, currentWeather, IMDAlerts, IMDAlerts2, IMDAlerts2Centroids, news, earthquake, cwc, avalanche, avalancheCentroid, getCurrentsLatestGeo, coastalCurrentsCentroids, tsunamiAlerts, swellSurgeCentroids, highWavesCentroids, swellSurgeALerts, highWaveAlerts, imdSeaPortWarnings, latestFlood
-[2026-05-28T01:55:27.325Z] No active alerts for target districts in 'ffAlerts'
-[2026-05-28T01:55:27.326Z] No active alerts for target districts in 'cloudBurst'
-[2026-05-28T01:55:27.326Z] No active alerts for target districts in 'currentWeather'
-[2026-05-28T01:55:27.326Z] No active alerts for target districts in 'IMDAlerts'
-[2026-05-28T01:55:27.326Z] No active alerts for target districts in 'IMDAlerts2'
-[2026-05-28T01:55:27.326Z] No active alerts for target districts in 'IMDAlerts2Centroids'
-[2026-05-28T01:55:27.326Z] No active alerts for target districts in 'news'
-[2026-05-28T01:55:27.326Z] No active alerts for target districts in 'earthquake'
-[2026-05-28T01:55:27.327Z] No active alerts for target districts in 'cwc'
-[2026-05-28T01:55:27.327Z] Skipping key 'avalanche': No valid FeatureCollection found.
-[2026-05-28T01:55:27.327Z] No active alerts for target districts in 'avalancheCentroid'
-[2026-05-28T01:55:27.327Z] No active alerts for target districts in 'getCurrentsLatestGeo'
-[2026-05-28T01:55:27.327Z] No active alerts for target districts in 'coastalCurrentsCentroids'
-[2026-05-28T01:55:27.327Z] No active alerts for target districts in 'tsunamiAlerts'
-[2026-05-28T01:55:27.327Z] No active alerts for target districts in 'swellSurgeCentroids'
-[2026-05-28T01:55:27.327Z] No active alerts for target districts in 'highWavesCentroids'
-[2026-05-28T01:55:27.327Z] No active alerts for target districts in 'swellSurgeALerts'
-[2026-05-28T01:55:27.327Z] No active alerts for target districts in 'highWaveAlerts'
-[2026-05-28T01:55:27.327Z] No active alerts for target districts in 'imdSeaPortWarnings'
-[2026-05-28T01:55:27.327Z] Skipping key 'latestFlood': No valid FeatureCollection found.
+[2026-05-28T06:00:32.170Z] Debug logging initialized
+[2026-05-28T06:00:32.173Z] Starting data fetch process
+[2026-05-28T06:00:32.203Z] Starting NRSC data fetch process
+[2026-05-28T06:00:33.693Z] API response status: 200
+[2026-05-28T06:00:33.695Z] Received JSON response: {"alerts":[{"severity":"WATCH","identifier":1779937892099033,"effective_start_time":"Thu May 28 08:40:00 IST 2026","effective_end_time":"Thu May 28 11:40:00 IST 2026","area_json":"{\"type\": \"MultiPolygon\", \"coordinates\": [[[[73.700182, 15.723825], [73.703512, 15.724221], [73.706589, 15.72173], [73.710983, 15.72023], [73.718568, 15.72162], [73.722557, 15.72289], [73.727646, 15.72248], [73.732261, 15.720581], [73.737038, 15.717251], [73.74102, 15.718721], [73.744056, 15.725641], [73.747675, 15.729475], [73.766471, 15.731711], [73.775788, 15.730532], [73.786491, 15.72325], [73.793212, 15.72366], [73.79757, 15.725092], [73.802841, 15.7322], [73.812621, 15.73352], [73.816033, 15.73527], [73.818509, 15.737902], [73.826554, 15.738859], [73.833038, 15.737752], [73.834014, 15.739747], [73.835985, 15.739981], [73.927538, 15.604819], [73.845141, 15.538675], [73.750419, 15.558636], [73.750419, 15.559041], [73.750136, 15.559041], [73.750136, 15.559312], [73.749863, 15.559305], [73.749863, 15.559861], [73.74958, 15.559861], [73.74958, 15.560422], [73.749307, 15.560417], [73.749307, 15.560695], [73.748742, 15.560691], [73.748742, 15.561251], [73.748466, 15.561251], [73.748466, 15.561532], [73.747916, 15.561532], [73.747916, 15.56181], [73.74736, 15.56181], [73.74736, 15.561532], [73.746938, 15.561532], [73.735626, 15.608751], [73.73764, 15.608751], [73.73764, 15.609031], [73.738024, 15.609031], [73.742907, 15.60041], [73.750963, 15.609031], [73.750968, 15.609031], [73.750968, 15.609036], [73.75122, 15.609305], [73.751251, 15.609305], [73.751251, 15.609339], [73.751479, 15.609583], [73.751809, 15.609583], [73.751809, 15.609861], [73.752083, 15.609861], [73.752083, 15.610229], [73.752262, 15.610421], [73.752358, 15.610421], [73.752358, 15.610524], [73.75664, 15.615106], [73.750536, 15.631271], [73.732332, 15.619583], [73.7322, 15.619582], [73.732086, 15.619877], [73.732086, 15.620142], [73.731984, 15.620142], [73.703234, 15.694447], [73.700182, 15.723825]]], [[[73.733762, 15.616529], [73.733756, 15.616555], [73.733756, 15.616567], [73.733778, 15.616529], [73.733762, 15.616529]]], [[[73.996203, 15.375429], [74.095385, 15.318041], [74.063341, 15.207637], [73.938219, 15.191439], [73.92296, 15.247389], [73.895495, 15.335701], [73.921434, 15.385727], [73.996203, 15.375429]]]]}","disaster_type":"Thunder shower","area_description":"Areas of Pernem, Bardez, Mormugao, Salcette ","severity_level":"Very Likely","type":0,"actual_lang":"en","warning_message":"Thunder shower / lightning with Gusty winds and light to moderate rainfall is very likely to occur at isolated places over talukas of Pernem, bardez, Mormugao, Salcette and other Talukas of North, South Goa in next 3 hours.","disseminated":"false","severity_color":"yellow","alert_id_sdma_autoinc":120076,"centroid":"73.80928739662275,15.64013066357969","alert_source":"IMD Goa","area_covered":"671.21","sender_org_id":"33"}],"responseMessage":"Success"}...
+[2026-05-28T06:00:33.696Z] Sachet data cached successfully!
+[2026-05-28T06:00:35.850Z] NRSC API response status: 200
+[2026-05-28T06:00:55.090Z] Received NRSC data with keys: ffAlerts, cloudBurst, currentWeather, IMDAlerts, IMDAlerts2, IMDAlerts2Centroids, news, earthquake, cwc, avalanche, avalancheCentroid, getCurrentsLatestGeo, coastalCurrentsCentroids, tsunamiAlerts, swellSurgeCentroids, highWavesCentroids, swellSurgeALerts, highWaveAlerts, imdSeaPortWarnings, latestFlood
+[2026-05-28T06:00:55.091Z] No active alerts for target districts in 'ffAlerts'
+[2026-05-28T06:00:55.091Z] No active alerts for target districts in 'cloudBurst'
+[2026-05-28T06:00:55.091Z] No active alerts for target districts in 'currentWeather'
+[2026-05-28T06:00:55.091Z] No active alerts for target districts in 'IMDAlerts'
+[2026-05-28T06:00:55.091Z] No active alerts for target districts in 'IMDAlerts2'
+[2026-05-28T06:00:55.092Z] No active alerts for target districts in 'IMDAlerts2Centroids'
+[2026-05-28T06:00:55.092Z] No active alerts for target districts in 'news'
+[2026-05-28T06:00:55.092Z] No active alerts for target districts in 'earthquake'
+[2026-05-28T06:00:55.092Z] No active alerts for target districts in 'cwc'
+[2026-05-28T06:00:55.092Z] Skipping key 'avalanche': No valid FeatureCollection found.
+[2026-05-28T06:00:55.092Z] No active alerts for target districts in 'avalancheCentroid'
+[2026-05-28T06:00:55.092Z] No active alerts for target districts in 'getCurrentsLatestGeo'
+[2026-05-28T06:00:55.092Z] No active alerts for target districts in 'coastalCurrentsCentroids'
+[2026-05-28T06:00:55.092Z] No active alerts for target districts in 'tsunamiAlerts'
+[2026-05-28T06:00:55.092Z] No active alerts for target districts in 'swellSurgeCentroids'
+[2026-05-28T06:00:55.093Z] No active alerts for target districts in 'highWavesCentroids'
+[2026-05-28T06:00:55.093Z] No active alerts for target districts in 'swellSurgeALerts'
+[2026-05-28T06:00:55.093Z] No active alerts for target districts in 'highWaveAlerts'
+[2026-05-28T06:00:55.093Z] No active alerts for target districts in 'imdSeaPortWarnings'
+[2026-05-28T06:00:55.093Z] Skipping key 'latestFlood': No valid FeatureCollection found.
