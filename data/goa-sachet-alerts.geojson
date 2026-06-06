@@ -1,7 +1,7 @@
 {
   "type": "FeatureCollection",
   "metadata": {
-    "timestamp": "2026-06-06T04:44:32.716Z",
+    "timestamp": "2026-06-06T07:39:16.194Z",
     "source": "Sachet - National Disaster Alert Portal",
     "count": 1
   },
@@ -10,21 +10,21 @@
       "type": "Feature",
       "properties": {
         "severity": "WATCH",
-        "identifier": 1780710554483019,
-        "effective_start_time": "Sat Jun 06 07:17:00 IST 2026",
-        "effective_end_time": "Sat Jun 06 10:17:00 IST 2026",
+        "identifier": 1780721224002019,
+        "effective_start_time": "Sat Jun 06 10:14:00 IST 2026",
+        "effective_end_time": "Sat Jun 06 13:14:00 IST 2026",
         "disaster_type": "Thunderstorm with Lightning",
         "area_description": "Dakshina Kannada,Udupi,Uttara Kannada districts of Karnataka",
         "severity_level": "Likely",
         "type": 0,
         "actual_lang": "kn",
-        "warning_message": "Mundina 3 gaṇṭegaḷalli dakṣiṇa kannaḍa, uḍupi mattu uttara kannaḍa jillegaḷalli ondu athavā eraḍu sthaḷagaḷalli guḍugu sahita maḷeyāguva sādhyateyide.ಮೂಲ:- ಐಎಂಡಿ ಬೆಂಗಳೂರು",
+        "warning_message": "ಮುಂದಿನ 3 ಗಂಟೆಗಳಲ್ಲಿ ದಕ್ಷಿಣ ಕನ್ನಡ, ಉಡುಪಿ ಮತ್ತು ಉತ್ತರ ಕನ್ನಡ ಜಿಲ್ಲೆಗಳಲ್ಲಿ ಒಂದು ಅಥವಾ ಎರಡು ಸ್ಥಳಗಳಲ್ಲಿ ಗುಡುಗು ಸಹಿತ ಮಳೆಯಾಗುವ ಸಾಧ್ಯತೆಯಿದೆ. IMD BNG",
         "disseminated": "true",
         "severity_color": "yellow",
-        "alert_id_sdma_autoinc": 122465,
+        "alert_id_sdma_autoinc": 122472,
         "centroid": "75.25274495272366,12.851583646622341",
         "alert_source": "Karnataka SDMA",
-        "area_covered": "18699.720493518427",
+        "area_covered": "19993.03",
         "sender_org_id": "19"
       },
       "geometry": {
