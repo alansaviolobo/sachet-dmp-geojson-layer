@@ -14,12 +14,12 @@ jobs:
     
     steps:
       - name: Checkout code branch
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: code
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '18'
           cache: 'npm'
@@ -37,7 +37,7 @@ jobs:
           cp data/debug-log.txt /tmp/sachet_data/ || true
 
       - name: Checkout data branch
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: data
 
