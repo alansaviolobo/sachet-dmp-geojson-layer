@@ -1,28 +1,28 @@
-[2026-11-04T03:44:29.071Z] Debug logging initialized
-[2026-11-04T03:44:29.072Z] Starting data fetch process
-[2026-11-04T03:44:29.083Z] Starting NRSC data fetch process
-[2026-11-04T03:44:30.179Z] API response status: 200
-[2026-11-04T03:44:30.180Z] Received JSON response: {"alerts":[],"responseMessage":"Success"}...
-[2026-11-04T03:44:30.180Z] Sachet data cached successfully!
-[2026-11-04T03:44:31.554Z] NRSC API response status: 200
-[2026-11-04T03:44:36.067Z] Received NRSC data with keys: ffAlerts, cloudBurst, currentWeather, IMDAlerts, IMDAlerts2, IMDAlerts2Centroids, news, earthquake, cwc, avalanche, avalancheCentroid, getCurrentsLatestGeo, coastalCurrentsCentroids, tsunamiAlerts, swellSurgeCentroids, highWavesCentroids, swellSurgeALerts, highWaveAlerts, imdSeaPortWarnings, latestFlood
-[2026-11-04T03:44:36.068Z] No active alerts for target districts in 'ffAlerts'
-[2026-11-04T03:44:36.068Z] No active alerts for target districts in 'cloudBurst'
-[2026-11-04T03:44:36.068Z] No active alerts for target districts in 'currentWeather'
-[2026-11-04T03:44:36.068Z] No active alerts for target districts in 'IMDAlerts'
-[2026-11-04T03:44:36.068Z] No active alerts for target districts in 'IMDAlerts2'
-[2026-11-04T03:44:36.068Z] No active alerts for target districts in 'IMDAlerts2Centroids'
-[2026-11-04T03:44:36.068Z] No active alerts for target districts in 'news'
-[2026-11-04T03:44:36.068Z] No active alerts for target districts in 'earthquake'
-[2026-11-04T03:44:36.068Z] No active alerts for target districts in 'cwc'
-[2026-11-04T03:44:36.068Z] Skipping key 'avalanche': No valid FeatureCollection found.
-[2026-11-04T03:44:36.068Z] No active alerts for target districts in 'avalancheCentroid'
-[2026-11-04T03:44:36.068Z] No active alerts for target districts in 'getCurrentsLatestGeo'
-[2026-11-04T03:44:36.068Z] No active alerts for target districts in 'coastalCurrentsCentroids'
-[2026-11-04T03:44:36.068Z] No active alerts for target districts in 'tsunamiAlerts'
-[2026-11-04T03:44:36.068Z] No active alerts for target districts in 'swellSurgeCentroids'
-[2026-11-04T03:44:36.068Z] No active alerts for target districts in 'highWavesCentroids'
-[2026-11-04T03:44:36.068Z] No active alerts for target districts in 'swellSurgeALerts'
-[2026-11-04T03:44:36.068Z] No active alerts for target districts in 'highWaveAlerts'
-[2026-11-04T03:44:36.068Z] No active alerts for target districts in 'imdSeaPortWarnings'
-[2026-11-04T03:44:36.068Z] Skipping key 'latestFlood': No valid FeatureCollection found.
+[2026-11-04T11:42:02.787Z] Debug logging initialized
+[2026-11-04T11:42:02.788Z] Starting data fetch process
+[2026-11-04T11:42:02.797Z] Starting NRSC data fetch process
+[2026-11-04T11:42:04.159Z] API response status: 200
+[2026-11-04T11:42:04.160Z] Received JSON response: {"alerts":[{"severity":"WATCH","identifier":1793784706685033,"effective_start_time":"Wed Nov 04 15:00:00 IST 2026","effective_end_time":"Wed Nov 04 19:00:00 IST 2026","area_json":"{\"type\": \"MultiPolygon\", \"coordinates\": [[[[73.786491, 15.72325], [73.793212, 15.72366], [73.79757, 15.725092], [73.801962, 15.731015], [73.808519, 15.731169], [73.810255, 15.733201], [73.812621, 15.73352], [73.816033, 15.73527], [73.820398, 15.73991], [73.833038, 15.737752], [73.838462, 15.748831], [73.840301, 15.756202], [73.838783, 15.76089], [73.845124, 15.76336], [73.847168, 15.76613], [73.849632, 15.77603], [73.851907, 15.778412], [73.856987, 15.77823], [73.855797, 15.78326], [73.860077, 15.787791], [73.86138, 15.79304], [73.86413, 15.79626], [73.865171, 15.797234], [73.867201, 15.797056], [73.873497, 15.795321], [73.875931, 15.793231], [73.874839, 15.786341], [73.875099, 15.7829], [73.879867, 15.779212], [73.88025, 15.777391], [73.886694, 15.770466], [73.886854, 15.769648], [73.886841, 15.76713], [73.884323, 15.764621], [73.882607, 15.756692], [73.880241, 15.752551], [73.882447, 15.749351], [73.885902, 15.747261], [73.908607, 15.742331], [73.914834, 15.745492], [73.917938, 15.745401], [73.924155, 15.742821], [73.945365, 15.741522], [73.949761, 15.732631], [73.950821, 15.723229], [73.955933, 15.716921], [73.958871, 15.711291], [73.957786, 15.707351], [73.956031, 15.704791], [73.95868, 15.701252], [73.957237, 15.696739], [73.965168, 15.695136], [73.973306, 15.653351], [73.970727, 15.649661], [73.969262, 15.644321], [73.975983, 15.628942], [73.981423, 15.625031], [73.986068, 15.623381], [73.990211, 15.62063], [73.992942, 15.616311], [73.998703, 15.61113], [74.002389, 15.609052], [74.007843, 15.608299], [74.013176, 15.609341], [74.027931, 15.6046], [74.035575, 15.609291], [74.036761, 15.612974], [74.076974, 15.626426], [74.080552, 15.62617], [74.086366, 15.629568], [74.140412, 15.647647], [74.142777, 15.647111], [74.14685, 15.648661], [74.154977, 15.649771], [74.163232, 15.64859], [74.16594, 15.65238], [74.173431, 15.652052], [74.174196, 15.658948], [74.179308, 15.660658], [74.184958, 15.678336], [74.190133, 15.680981], [74.197692, 15.67893], [74.198112, 15.673651], [74.194474, 15.67214], [74.196327, 15.664911], [74.211541, 15.660979], [74.211967, 15.6585], [74.209861, 15.654131], [74.21325, 15.64903], [74.224089, 15.650311], [74.228798, 15.652961], [74.228431, 15.65445], [74.224053, 15.658871], [74.22503, 15.659863], [74.228136, 15.65625], [74.246367, 15.664149], [74.255257, 15.65421], [74.256478, 15.646801], [74.257233, 15.63394], [74.254516, 15.629612], [74.252533, 15.62382], [74.254356, 15.623132], [74.25943, 15.624461], [74.260811, 15.623763], [74.262505, 15.587865], [74.256371, 15.582561], [74.257415, 15.5755], [74.254418, 15.572501], [74.254311, 15.56583], [74.264581, 15.560791], [74.26719, 15.56305], [74.284272, 15.522338], [74.282798, 15.520541], [74.283753, 15.51945], [74.281897, 15.512952], [74.268143, 15.505921], [74.260827, 15.500841], [74.257249, 15.496761], [74.257137, 15.495875], [74.086229, 15.459274], [73.843615, 15.538675], [73.685381, 15.725884], [73.691857, 15.72691], [73.697342, 15.726231], [73.70266, 15.724911], [73.706589, 15.72173], [73.710983, 15.72023], [73.718568, 15.72162], [73.722557, 15.72289], [73.727646, 15.72248], [73.732261, 15.720581], [73.737038, 15.717251], [73.74102, 15.718721], [73.744056, 15.725641], [73.747932, 15.729746], [73.775975, 15.730405], [73.786491, 15.72325]]]]}","disaster_type":"Light Thunderstorms","area_description":"Pernem, dharbandora,bicholim","severity_level":"Likely","type":0,"actual_lang":"en","warning_message":"Light to moderate rainfall accompanied with Thunderstorm is likely to occur at isolated places over Sattari and Tiswadi talukas of North Goa districts of Goa state in the next 1-4 hours.","disseminated":"false","severity_color":"yellow","alert_id_sdma_autoinc":153575,"centroid":"73.99982059181316,15.600800184187309","alert_source":"IMD Goa","area_covered":"1090.53","sender_org_id":"33"}],"responseMessage":"Success"}...
+[2026-11-04T11:42:04.160Z] Sachet data cached successfully!
+[2026-11-04T11:42:05.915Z] NRSC API response status: 200
+[2026-11-04T11:42:13.292Z] Received NRSC data with keys: ffAlerts, cloudBurst, currentWeather, IMDAlerts, IMDAlerts2, IMDAlerts2Centroids, news, earthquake, cwc, avalanche, avalancheCentroid, getCurrentsLatestGeo, coastalCurrentsCentroids, tsunamiAlerts, swellSurgeCentroids, highWavesCentroids, swellSurgeALerts, highWaveAlerts, imdSeaPortWarnings, latestFlood
+[2026-11-04T11:42:13.292Z] No active alerts for target districts in 'ffAlerts'
+[2026-11-04T11:42:13.292Z] No active alerts for target districts in 'cloudBurst'
+[2026-11-04T11:42:13.292Z] No active alerts for target districts in 'currentWeather'
+[2026-11-04T11:42:13.292Z] No active alerts for target districts in 'IMDAlerts'
+[2026-11-04T11:42:13.292Z] No active alerts for target districts in 'IMDAlerts2'
+[2026-11-04T11:42:13.292Z] No active alerts for target districts in 'IMDAlerts2Centroids'
+[2026-11-04T11:42:13.292Z] No active alerts for target districts in 'news'
+[2026-11-04T11:42:13.292Z] No active alerts for target districts in 'earthquake'
+[2026-11-04T11:42:13.292Z] No active alerts for target districts in 'cwc'
+[2026-11-04T11:42:13.292Z] Skipping key 'avalanche': No valid FeatureCollection found.
+[2026-11-04T11:42:13.292Z] No active alerts for target districts in 'avalancheCentroid'
+[2026-11-04T11:42:13.292Z] No active alerts for target districts in 'getCurrentsLatestGeo'
+[2026-11-04T11:42:13.292Z] No active alerts for target districts in 'coastalCurrentsCentroids'
+[2026-11-04T11:42:13.292Z] No active alerts for target districts in 'tsunamiAlerts'
+[2026-11-04T11:42:13.292Z] No active alerts for target districts in 'swellSurgeCentroids'
+[2026-11-04T11:42:13.292Z] No active alerts for target districts in 'highWavesCentroids'
+[2026-11-04T11:42:13.292Z] No active alerts for target districts in 'swellSurgeALerts'
+[2026-11-04T11:42:13.292Z] No active alerts for target districts in 'highWaveAlerts'
+[2026-11-04T11:42:13.292Z] No active alerts for target districts in 'imdSeaPortWarnings'
+[2026-11-04T11:42:13.293Z] Skipping key 'latestFlood': No valid FeatureCollection found.
