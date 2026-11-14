@@ -1,0 +1,43 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "timestamp": "2026-11-14T12:39:36.403Z",
+    "source": "NRSC - National Remote Sensing Centre",
+    "originalLayerId": "FFAlerts",
+    "count": 1
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.08499,
+          15.5505
+        ]
+      },
+      "crs": {
+        "type": "EPSG",
+        "properties": {
+          "code": "4326"
+        }
+      },
+      "properties": {
+        "name": "",
+        "sensor": "JPSS1(375m)",
+        "time": "2026-11-14 13:48:00",
+        "dist": "NORTH GOA",
+        "style": {
+          "icon": {
+            "iconUrl": "img/dashboard/Fire/f3.png",
+            "iconSize": [
+              25,
+              25
+            ]
+          },
+          "className": "blinking"
+        }
+      }
+    }
+  ]
+}
