@@ -1,27 +1,27 @@
-[2026-11-14T12:39:31.908Z] Debug logging initialized
-[2026-11-14T12:39:31.908Z] Starting data fetch process
-[2026-11-14T12:39:31.917Z] Starting NRSC data fetch process
-[2026-11-14T12:39:33.291Z] API response status: 200
-[2026-11-14T12:39:33.292Z] Received JSON response: {"alerts":[],"responseMessage":"Success"}...
-[2026-11-14T12:39:33.292Z] Sachet data cached successfully!
-[2026-11-14T12:39:34.459Z] NRSC API response status: 200
-[2026-11-14T12:39:36.403Z] Received NRSC data with keys: ffAlerts, cloudBurst, currentWeather, IMDAlerts, IMDAlerts2Centroids, news, earthquake, cwc, avalanche, avalancheCentroid, getCurrentsLatestGeo, coastalCurrentsCentroids, tsunamiAlerts, swellSurgeCentroids, highWavesCentroids, swellSurgeALerts, highWaveAlerts, imdSeaPortWarnings, latestFlood
-[2026-11-14T12:39:36.403Z] Saved 1 alerts to ffAlerts.geojson
-[2026-11-14T12:39:36.403Z] No active alerts for target districts in 'cloudBurst'
-[2026-11-14T12:39:36.404Z] No active alerts for target districts in 'currentWeather'
-[2026-11-14T12:39:36.404Z] No active alerts for target districts in 'IMDAlerts'
-[2026-11-14T12:39:36.404Z] No active alerts for target districts in 'IMDAlerts2Centroids'
-[2026-11-14T12:39:36.404Z] No active alerts for target districts in 'news'
-[2026-11-14T12:39:36.404Z] No active alerts for target districts in 'earthquake'
-[2026-11-14T12:39:36.404Z] No active alerts for target districts in 'cwc'
-[2026-11-14T12:39:36.404Z] Skipping key 'avalanche': No valid FeatureCollection found.
-[2026-11-14T12:39:36.404Z] No active alerts for target districts in 'avalancheCentroid'
-[2026-11-14T12:39:36.404Z] No active alerts for target districts in 'getCurrentsLatestGeo'
-[2026-11-14T12:39:36.404Z] No active alerts for target districts in 'coastalCurrentsCentroids'
-[2026-11-14T12:39:36.404Z] No active alerts for target districts in 'tsunamiAlerts'
-[2026-11-14T12:39:36.404Z] No active alerts for target districts in 'swellSurgeCentroids'
-[2026-11-14T12:39:36.404Z] No active alerts for target districts in 'highWavesCentroids'
-[2026-11-14T12:39:36.404Z] No active alerts for target districts in 'swellSurgeALerts'
-[2026-11-14T12:39:36.404Z] No active alerts for target districts in 'highWaveAlerts'
-[2026-11-14T12:39:36.404Z] No active alerts for target districts in 'imdSeaPortWarnings'
-[2026-11-14T12:39:36.404Z] Skipping key 'latestFlood': No valid FeatureCollection found.
+[2026-11-14T18:34:17.214Z] Debug logging initialized
+[2026-11-14T18:34:17.215Z] Starting data fetch process
+[2026-11-14T18:34:17.224Z] Starting NRSC data fetch process
+[2026-11-14T18:34:18.636Z] API response status: 200
+[2026-11-14T18:34:18.638Z] Received JSON response: {"alerts":[],"responseMessage":"Success"}...
+[2026-11-14T18:34:18.638Z] Sachet data cached successfully!
+[2026-11-14T18:34:19.328Z] NRSC API response status: 200
+[2026-11-14T18:34:22.066Z] Received NRSC data with keys: ffAlerts, cloudBurst, currentWeather, IMDAlerts, IMDAlerts2Centroids, news, earthquake, cwc, avalanche, avalancheCentroid, getCurrentsLatestGeo, coastalCurrentsCentroids, tsunamiAlerts, swellSurgeCentroids, highWavesCentroids, swellSurgeALerts, highWaveAlerts, imdSeaPortWarnings, latestFlood
+[2026-11-14T18:34:22.067Z] Saved 1 alerts to ffAlerts.geojson
+[2026-11-14T18:34:22.067Z] No active alerts for target districts in 'cloudBurst'
+[2026-11-14T18:34:22.067Z] No active alerts for target districts in 'currentWeather'
+[2026-11-14T18:34:22.067Z] No active alerts for target districts in 'IMDAlerts'
+[2026-11-14T18:34:22.067Z] No active alerts for target districts in 'IMDAlerts2Centroids'
+[2026-11-14T18:34:22.067Z] No active alerts for target districts in 'news'
+[2026-11-14T18:34:22.067Z] No active alerts for target districts in 'earthquake'
+[2026-11-14T18:34:22.067Z] No active alerts for target districts in 'cwc'
+[2026-11-14T18:34:22.067Z] Skipping key 'avalanche': No valid FeatureCollection found.
+[2026-11-14T18:34:22.067Z] No active alerts for target districts in 'avalancheCentroid'
+[2026-11-14T18:34:22.067Z] No active alerts for target districts in 'getCurrentsLatestGeo'
+[2026-11-14T18:34:22.067Z] No active alerts for target districts in 'coastalCurrentsCentroids'
+[2026-11-14T18:34:22.067Z] No active alerts for target districts in 'tsunamiAlerts'
+[2026-11-14T18:34:22.067Z] No active alerts for target districts in 'swellSurgeCentroids'
+[2026-11-14T18:34:22.067Z] No active alerts for target districts in 'highWavesCentroids'
+[2026-11-14T18:34:22.067Z] No active alerts for target districts in 'swellSurgeALerts'
+[2026-11-14T18:34:22.067Z] No active alerts for target districts in 'highWaveAlerts'
+[2026-11-14T18:34:22.067Z] No active alerts for target districts in 'imdSeaPortWarnings'
+[2026-11-14T18:34:22.067Z] Skipping key 'latestFlood': No valid FeatureCollection found.
